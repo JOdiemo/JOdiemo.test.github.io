@@ -24,6 +24,14 @@ body {
   margin-left: 25px;
   padding-left: 5px;
   padding-top: 10px;
+  animation: rotation 5s;
+}
+
+@keyframes rotation {
+
+  50% {
+    transform: rotate(360deg);
+   }
 }
 
 nav {
