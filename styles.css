@@ -32,6 +32,13 @@ nav {
   padding-top: 10px;
 }
 
+.navbarmenuul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  list-style: none;
+}
+
 section {
   display: grid;
   width: 100%;
@@ -63,11 +70,25 @@ section {
   margin-left: 10px;
 }
 
+.works-3 {
+  display: flex;
+  flex-flow: column;
+  border: 1px solid #dfe1e6;
+  border-radius: 16px;
+  margin-left: 10px;
+}
+
 .aboutme {
   background-color: white;
 }
 
 .works > img {
+  order: -1;
+  align-self: center;
+  padding-top: 50px;
+}
+
+.works-3 > img {
   order: -1;
   align-self: center;
   padding-top: 50px;
@@ -211,6 +232,10 @@ button:enabled {
 }
 
 .works a {
+  padding-top: 50px;
+}
+
+.works-3 a {
   padding-top: 50px;
 }
 
@@ -412,4 +437,60 @@ input[type=email] {
   outline-color: transparent;
   outline-style: solid;
   box-shadow: 0 0 0 4px grey;
+}
+
+.ruby {
+  min-width: 5px;
+}
+
+/* -------media----------- */
+
+@media (min-width: 600px) {
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+  }
+
+  .works {
+    display: flex;
+    flex-flow: row;
+    border: 1px solid #dfe1e6;
+    border-radius: 16px;
+    margin-left: 10px;
+  }
+
+  .works-3 {
+    display: flex;
+    flex-flow: row;
+    border: 1px solid #dfe1e6;
+    border-radius: 16px;
+    margin-left: 10px;
+  }
+
+  .works > img {
+    order: 1;
+  }
+
+  .works-3 > img {
+    order: 1;
+  }
+
+  .aboutme {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .aboutme-box {
+    width: 49%;
+  }
+
+  .myskills {
+    order: 2;
+  }
 }
