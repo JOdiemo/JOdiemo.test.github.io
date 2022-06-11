@@ -336,13 +336,14 @@ button:enabled {
   align-items: center;
 }
 
-.frameworks ul {
+/* .frameworks ul {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   list-style: none;
   padding-left: 0;
-}
+  background-color: yellow;
+} */
 
 .lang-text {
   display: flex;
@@ -624,15 +625,25 @@ input[type=email] {
     line-height: 44px;
   }
 
+  .langs {
+    margin-left: 43px;
+  }
+
   .frameworks ul {
     display: flex;
     flex-direction: row;
+    margin-left: 0;
   }
 
   .frameworks ul li {
-    width: 0;
-    padding: 0;
+    padding-right: 10px;
     size: 10px;
+    margin-left: 0;
+    float: left;
+  }
+
+  .frameworks ul li img {
+    width: 70px;
   }
 
   .lang-text {
