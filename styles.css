@@ -2,6 +2,7 @@
 
 * {
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 body {
@@ -22,7 +23,7 @@ body {
 
 .Top a {
   margin-left: 25px;
-  padding-left: 5px;
+  padding-left: 55px;
   padding-top: 10px;
 }
 
@@ -35,24 +36,25 @@ nav {
 .navbarmenuul {
   display: flex;
   flex-direction: row;
-  align-items: center;
   list-style: none;
   font-family: "Poppin", sans-serif;
-  size: 10px;
+  padding-right: 10px;
 }
 
 .navbarmenulink {
+  display: inline-block;
   text-decoration: none;
-  font-size: 8px;
+  font-size: 13px;
+  padding: 0;
 }
 
 section {
   display: grid;
   width: 100%;
   align-items: center;
-  margin-right: 25px;
-  margin-left: 25px;
   grid-gap: 50px;
+  padding-left: 20px;
+  padding-right: 10px;
 }
 
 .headline {
@@ -66,16 +68,6 @@ section {
   background: url(images/header-shapes\ mobile.png) no-repeat;
 }
 
-/* .headline {
-
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  font-family: "Poppins", sans-serif;
-  background-image: url("images/header-shapes\ mobile.png");
-  background-repeat: no-repeat;
-  co
-} */
 .headline-box {
   display: flex;
   width: 100%;
@@ -85,6 +77,10 @@ section {
   padding-top: 50px;
   margin-left: 10px;
   margin-right: 25px;
+}
+
+.headline-box h2 {
+  padding-left: 10px;
 }
 
 .works {
@@ -110,12 +106,14 @@ section {
   order: -1;
   align-self: center;
   padding-top: 50px;
+  width: 370px;
 }
 
 .works-3 > img {
   order: -1;
   align-self: center;
   padding-top: 50px;
+  width: 365px;
 }
 
 .sociol-logo {
@@ -218,6 +216,7 @@ section {
   flex-direction: row;
   justify-content: space-between;
   padding: 10px 20px 10px 20px;
+  margin-top: 100px;
   font-family: "Poppins", sans-serif;
 }
 
@@ -351,6 +350,18 @@ button:enabled {
   text-align: center;
   color: #ebebff;
   align-self: center;
+}
+
+.myself {
+  padding-left: 15px;
+}
+
+.details {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  padding-left: 10px;
 }
 
 .headline1 {
