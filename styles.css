@@ -10,6 +10,7 @@ body {
   -o-transition: all 0.2s linear;
   -moz-transition: all 0.2s linear;
   -webkit-transition: all 0.2s linear;
+  width: 100%;
 }
 
 .Top {
@@ -54,14 +55,14 @@ nav {
   padding: 0;
 }
 
-section {
+/* section {
   display: grid;
   width: 100%;
   align-items: center;
-  grid-gap: 50px;
   padding-left: 20px;
-  padding-right: 10px;
-}
+  padding-right: 60px;
+  margin-right: 100px;
+} */
 
 .headline {
   display: flex;
@@ -69,7 +70,7 @@ section {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  height: 779px;
+  height: 600px;
   font-family: "Poppins", sans-serif;
   background: url(images/header-shapes\ mobile.png) no-repeat;
 }
@@ -80,7 +81,6 @@ section {
   flex-direction: column;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
-  padding-top: 50px;
   margin-left: 10px;
   margin-right: 25px;
 }
@@ -92,23 +92,40 @@ section {
 .works {
   display: flex;
   flex-direction: column;
-  background-repeat: no-repeat;
-  background-size: cover;
+  padding-left: 20px;
+}
+
+.works-1 {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border: 1px solid #dfe1e6;
+  border-radius: 16px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.works-2 {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border: 1px solid #dfe1e6;
+  border-radius: 16px;
+  padding-top: 100px;
+  margin-top: 100px;
 }
 
 .works-3 {
   display: flex;
-  flex-flow: column;
+  flex-direction: column;
   border: 1px solid #dfe1e6;
   border-radius: 16px;
   margin-left: 10px;
+  padding-top: 100px;
+  margin-top: 100px;
 }
 
-.aboutme {
-  background-color: white;
-}
-
-.works > img {
+.works-2 > img {
   order: -1;
   align-self: center;
   padding-top: 50px;
@@ -143,6 +160,7 @@ section {
   flex-direction: column;
   font-family: "Poppins", sans-serif;
   padding: 20px 30px 50px 20px;
+  margin-left: 20px;
 }
 
 .works-detail .main-topic {
@@ -220,15 +238,6 @@ section {
   border: 1px solid blue;
 }
 
-.works-1 {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding: 10px 20px 10px 20px;
-  margin-top: 100px;
-  font-family: "Poppins", sans-serif;
-}
-
 #registerbtn:hover {
   background-color: blue;
 }
@@ -248,6 +257,16 @@ button:enabled {
   color: blue;
 }
 
+.aboutme .aboutme-box .metext {
+  font-family: "Poppins", sans-serif;
+}
+
+.aboutme .aboutme-box .aboutme-header {
+  font-family: "Poppins", sans-serif;
+  font-weight: bolder;
+  font-size: 40px;
+}
+
 .aboutme .aboutme-box button {
   font-family: "Poppins", sans-serif;
   font-style: normal;
@@ -263,7 +282,7 @@ button:enabled {
   border-radius: 15px;
 }
 
-.works a {
+.works-2 a {
   padding-top: 50px;
 }
 
@@ -530,7 +549,17 @@ input[type=email] {
     border: 1px solid #dfe1e6;
     border-radius: 16px;
     margin-left: 10px;
-    padding-top: 20px;
+    margin-top: 50px;
+  }
+
+  .works-2 {
+    display: flex;
+    flex-flow: row;
+    border: 1px solid #dfe1e6;
+    border-radius: 16px;
+    margin-left: 10px;
+    margin-top: 50px;
+    padding-top: 30px;
   }
 
   .works-3 {
@@ -538,6 +567,7 @@ input[type=email] {
     flex-flow: row;
     border: 1px solid #dfe1e6;
     margin-left: 10px;
+    padding-top: 30px;
   }
 
   .works-3 > img {
@@ -547,6 +577,9 @@ input[type=email] {
   .aboutme {
     display: flex;
     flex-direction: row;
+    align-items: center;
+    background-color: white;
+    padding-left: 20px;
   }
 
   .aboutme-box {
