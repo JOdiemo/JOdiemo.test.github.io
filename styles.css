@@ -27,6 +27,12 @@ body {
   padding-top: 10px;
 }
 
+.social-link-heading {
+  padding-left: 10px;
+  font-family: "Poppin", sans-serif;
+  color: blue;
+}
+
 nav {
   margin-right: 30px;
   padding-right: 5px;
@@ -106,14 +112,14 @@ section {
   order: -1;
   align-self: center;
   padding-top: 50px;
-  width: 370px;
+  width: 80%;
 }
 
 .works-3 > img {
   order: -1;
   align-self: center;
   padding-top: 50px;
-  width: 365px;
+  width: 80%;
 }
 
 .sociol-logo {
@@ -168,13 +174,14 @@ section {
 .works-intro h2 {
   padding-left: 0;
   margin-left: 0;
+  font-size: 8px;
 }
 
 .works-intro ul li {
   display: flex;
   float: left;
   justify-content: space-between;
-  padding-left: 1em;
+  padding-left: 10px;
 }
 
 .works-intro ul li img {
@@ -187,12 +194,14 @@ section {
   margin-left: 0;
   list-style: none;
   padding-left: 0;
+  align-items: center;
 }
 
 .lang-icon ul li {
   display: flex;
   padding-left: 1em;
   margin-left: 0;
+  align-items: center;
 }
 
 .language button {
@@ -344,6 +353,8 @@ button:enabled {
 .details-2 {
   font-family: 'Poppins', sans-serif;
   font-style: normal;
+  padding-left: 10px;
+  padding-right: 20px;
   font-weight: 400;
   font-size: 20px;
   line-height: 28px;
@@ -475,7 +486,20 @@ input[type=email] {
 }
 
 .ruby {
-  min-width: 5px;
+  min-width: 20px;
+  height: 15px;
+  margin: 0;
+  background-color: lightblue;
+  border-radius: 10px;
+  padding-left: 40px;
+}
+
+.navbar {
+  display: none;
+}
+
+.mobile-version {
+  visibility: visible;
 }
 
 /* -------media----------- */
@@ -490,6 +514,14 @@ input[type=email] {
     flex-direction: column;
     align-items: center;
     margin: 0;
+  }
+
+  .navbar {
+    display: unset;
+  }
+
+  .mobile-version {
+    display: none;
   }
 
   .works {
@@ -528,7 +560,7 @@ input[type=email] {
   .works-intro h2 {
     padding-left: 0;
     margin-left: 0;
-    font-size: 10px;
+    font-size: 20px;
   }
 
   .works-3 br {
@@ -553,7 +585,7 @@ input[type=email] {
   }
 
   .works-detail .main-topic {
-    font-size: 30px;
+    font-size: 40px;
     font-style: normal;
     font-weight: bold;
     line-height: 44px;
