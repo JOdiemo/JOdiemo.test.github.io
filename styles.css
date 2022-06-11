@@ -5,10 +5,10 @@
 }
 
 body {
-  transition:all .2s linear; 
-  -o-transition:all .2s linear; 
-  -moz-transition:all .2s linear; 
-  -webkit-transition:all .2s linear;
+  transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -webkit-transition: all 0.2s linear;
 }
 
 .Top {
@@ -56,15 +56,16 @@ section {
 }
 
 .headline {
-display: flex;
-width: 100%;
-flex-direction: column;
-justify-content: space-between;
-align-items: center;
-height: 779px;
-font-family: "Poppins", sans-serif;
-background: url(images/header-shapes\ mobile.png) no-repeat;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 779px;
+  font-family: "Poppins", sans-serif;
+  background: url(images/header-shapes\ mobile.png) no-repeat;
 }
+
 /* .headline {
 
   display: flex;
@@ -84,8 +85,8 @@ background: url(images/header-shapes\ mobile.png) no-repeat;
   padding-top: 50px;
   margin-left: 10px;
   margin-right: 25px;
-  
 }
+
 .works {
   display: flex;
   flex-direction: column;
@@ -111,14 +112,11 @@ background: url(images/header-shapes\ mobile.png) no-repeat;
   padding-top: 50px;
 }
 
-
 .works-3 > img {
   order: -1;
   align-self: center;
   padding-top: 50px;
 }
-
-
 
 .sociol-logo {
   display: flex;
@@ -473,7 +471,6 @@ input[type=email] {
 
 /* -------media----------- */
 
-
 @media (min-width: 768px) {
   * {
     box-sizing: border-box;
@@ -505,8 +502,6 @@ input[type=email] {
   .works-3 > img {
     order: 1;
   }
-
-
 
   .aboutme {
     display: flex;
@@ -563,12 +558,10 @@ input[type=email] {
   .frameworks ul li {
     width: 0;
     padding: 0;
-    margin: 0;
     size: 10px;
   }
 
   .lang-text {
     position: relative;
   }
- 
 }
