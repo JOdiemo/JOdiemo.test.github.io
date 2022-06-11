@@ -2,7 +2,7 @@
 
 # Portfolio - Jorum Odiemo
 
-> Creating a skeleton mobile website of my portfolio
+> Creating a skeleton mobile desktop version website of my portfolio
 > 
 
 
