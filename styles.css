@@ -19,7 +19,8 @@ body {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  margin-right: 25px;
+  margin-right: 20px;
+  padding: 0;
 }
 
 .Top a {
@@ -37,7 +38,8 @@ body {
 nav {
   margin-right: 30px;
   padding-right: 5px;
-  padding-top: 10px;
+
+  /* padding-top: 10px; */
 }
 
 .navbarmenuul {
@@ -51,18 +53,19 @@ nav {
 .navbarmenulink {
   display: inline-block;
   text-decoration: none;
-  font-size: 13px;
+  font-size: 10px;
   padding: 0;
+  padding-left: 10px;
 }
 
-/* section {
+section {
   display: grid;
   width: 100%;
   align-items: center;
   padding-left: 20px;
   padding-right: 60px;
   margin-right: 100px;
-} */
+}
 
 .headline {
   display: flex;
@@ -83,6 +86,7 @@ nav {
   font-style: normal;
   margin-left: 10px;
   margin-right: 25px;
+  padding-top: 30px;
 }
 
 .headline-box h2 {
@@ -93,6 +97,7 @@ nav {
   display: flex;
   flex-direction: column;
   padding-left: 20px;
+  padding-top: 0;
 }
 
 .works-1 {
@@ -164,10 +169,12 @@ nav {
 }
 
 .works-detail .main-topic {
-  font-size: 50px;
+  font-size: 40px;
   font-style: normal;
   font-weight: bold;
   line-height: 44px;
+  height: auto;
+  overflow: hidden;
 }
 
 .works-intro {
@@ -336,15 +343,6 @@ button:enabled {
   align-items: center;
 }
 
-/* .frameworks ul {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  list-style: none;
-  padding-left: 0;
-  background-color: yellow;
-} */
-
 .lang-text {
   display: flex;
   justify-content: space-between;
@@ -380,7 +378,8 @@ button:enabled {
   line-height: 28px;
   text-align: center;
   color: #ebebff;
-  align-self: center;
+  align-items: center;
+  text-justify: center;
 }
 
 .myself {
@@ -415,6 +414,7 @@ button:enabled {
   align-items: center;
   padding-top: 50px;
   text-align: center;
+  overflow: hidden;
 }
 
 .form-input {
@@ -550,7 +550,6 @@ input[type=email] {
     border: 1px solid #dfe1e6;
     border-radius: 16px;
     margin-left: 10px;
-    padding-top: 100px;
   }
 
   .works-1 {
