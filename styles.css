@@ -27,6 +27,14 @@ body {
   margin-left: 25px;
   padding-left: 55px;
   padding-top: 10px;
+  animation: rotation 5s;
+}
+
+@keyframes rotation {
+
+  50% {
+    transform: rotate(360deg);
+   }
 }
 
 .social-link-heading {
